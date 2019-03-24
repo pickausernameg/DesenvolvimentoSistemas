@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Form with Recaptcha Validation</h1>
+	<form method="POST" action="{{url_for('form')}}">
+		{{form.csrf_token}}
+		{{form.username}}
+		{{form.password}}
+		{{form.recaptcha}}
+		<input type="submit" value="submit">
+	</form>
+</body>
+</html>
